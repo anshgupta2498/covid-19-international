@@ -1,0 +1,31 @@
+.cases{
+    background-color: rgb(20, 22, 85);
+    width: 30%;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: .5rem .5rem 0px 0px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.cases:hover{
+    cursor: pointer;
+    background-color: rgb(77, 95, 156);
+}
+
+.active{
+    background-color: rgb(55, 86, 153);
+}
+.dash-flex{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding: 0;
+}
+@media screen and (max-width:592px) {
+    .cases{
+        padding: .5rem;
+        font-size: .8rem;
+        margin: 2px;
+    }
+}

@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row-flex my-5">
+        <div class="col-div">
+            <div class="board">
+                <p>Total Cases</p>
+                <p class="figures">{{worldCases.cases | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Total Deaths</p>
+                <p class="figures">{{worldCases.deaths | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Active Cases</p>
+                <p class="figures">{{worldCases.active | shortNumber}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-flex my-5">
+        <div class="col-div">
+            <div class="board">
+                <p>Total Tests</p>
+                <p class="figures">{{worldCases.tests | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Total Recovered</p>
+                <p class="figures">{{worldCases.recovered | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Cases Per Million</p>
+                <p class="figures">{{worldCases.casesPerOneMillion | shortNumber}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="h1 img-map-img mb-5">
+            <img class="img"
+                src="https://www.bloomberg.com/graphics/2020-coronavirus-cases-world-map/img/2020-coronavirus-cases-world-map-twitter.png?t=202011091543">
+            <p class="desc mt-3">Global Covid Cases and Deaths</p>
+        </div>
+        <div class="h1 mt-5 img-map-img ">
+            <img class="img"
+                src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41562-021-01122-8/MediaObjects/41562_2021_1122_Fig1_HTML.png">
+            <p class="desc mt-3"> Global Vaccination Coverage</p>
+        </div>
+        <div class="h1 mt-5 img-map-img ">
+            <img class="img"
+                src="https://ichef.bbci.co.uk/news/640/cpsprodpb/B7D5/production/_116616074_optimised-3-gdp_map_jan_2021_640-nc.png">
+            <p class="desc mt-3">Economic impact</p>
+        </div>
+
+    </div>
+</div>

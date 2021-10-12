@@ -1,0 +1,19 @@
+<div *ngIf="!countryVaccinesCheck" class="err"><img
+    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" class="loader"
+    alt="loader"></div>
+<p class="notFound text-center mt-5 h1 text-danger font-weight-bold" *ngIf="!notFound">Data Not Available</p>
+<div class="rest" *ngIf="countryVaccinesCheck && notFound">
+<p class="country-name my-4">Vaccine doses administered in {{countryName}}</p>
+
+<div *ngIf="countryVaccines">
+    <div class="my-5">
+        <div class="board">
+            <div class="overlay">
+                <div class="val">
+                    <p>Total Doses Administered</p>
+                    <p class="figures">{{countryVaccines | shortNumber}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+.board{
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.figures{
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+.err{
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    margin: 5rem 2rem;
+    width: 3rem;
+}
+.country-name{
+    font-size: 1.2rem;
+    align-self: center;
+    font-weight: bold;
+    margin: 0px 1rem;
+    text-align: center;
+}
+.row-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.col-div{
+    width: 30%;
+    background-color: rgb(38 38 128);
+    background-image: url('https://images.prismic.io/alliancecms/31e65801-f510-4899-9ab7-7b927cd903fb_covid19.png?auto=compress,format&rect=201,0,1200,900&w=640&h=480');
+    background-position: 10% 10%;
+}
+@media screen and (max-width:1200px) {
+    .figures{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:992px) {
+    .figures{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .figures{
+        font-size: 1.8rem;
+    }
+    .board{
+        padding: .5rem;
+    }
+    .col-div{
+        background-position: bottom left;
+    }
+}
+@media screen and (max-width:592px) {
+    .figures{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="card-1 card">
+    <div class="card-body">
+        <input class="form-control" type="text" placeholder="Search Country" (keyup)="searchCountries()"
+            [(ngModel)]="search">
+    </div>
+</div>
+<div *ngIf="isEmpty" class="text-danger">No Country Found!</div>

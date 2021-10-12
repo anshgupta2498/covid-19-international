@@ -1,0 +1,28 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th class="state first">State/UTs</th>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Deaths</th>
+                <th>Partially Vaccinated</th>
+                <th>Fully Vaccinated</th>
+                <th>Population</th>
+                <th>Tested</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="my-2" *ngFor="let state of indiaMap | keyvalue">
+                <td class="state">{{state.value}}</td>
+                <td>{{indiaCases[state.key].total.confirmed | shortNumber}}</td>
+                <td>{{indiaCases[state.key].total.recovered | shortNumber}}</td>
+                <td>{{indiaCases[state.key].total.deceased | shortNumber}}</td>
+                <td>{{indiaCases[state.key].total.vaccinated1 | shortNumber}}</td>
+                <td>{{indiaCases[state.key].total.vaccinated2 | shortNumber}}</td>
+                <td>{{indiaCases[state.key].meta.population | shortNumber}}</td>
+                <td>{{indiaCases[state.key].total.tested | shortNumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

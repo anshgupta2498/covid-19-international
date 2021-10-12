@@ -1,0 +1,47 @@
+<div *ngIf="!countryCasesCheck" class="err"><img
+        src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" class="loader"
+        alt="loader"></div>
+<div class="rest" *ngIf="countryCasesCheck">
+    <p class="country-name my-4">Showing covid cases for {{countryCases.country}}</p>
+    <div class="row-flex my-5">
+        <div class="col-div">
+            <div class="board">
+                <p>Total Cases</p>
+                <p class="figures">{{countryCases.cases | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Total Deaths</p>
+                <p class="figures">{{countryCases.deaths | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Active Cases</p>
+                <p class="figures">{{countryCases.active | shortNumber}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-flex my-5">
+        <div class="col-div">
+            <div class="board">
+                <p>Total Tests</p>
+                <p class="figures">{{countryCases.tests | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Total Recovered</p>
+                <p class="figures">{{countryCases.recovered | shortNumber}}</p>
+            </div>
+        </div>
+        <div class="col-div">
+            <div class="board">
+                <p>Cases Per Million</p>
+                <p class="figures">{{countryCases.casesPerOneMillion | shortNumber}}</p>
+            </div>
+        </div>
+    </div>
+</div>
