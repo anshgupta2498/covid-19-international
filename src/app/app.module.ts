@@ -51,8 +51,7 @@ const appRoutes: Routes =
           ]
         }
       ]
-    }
-    ,{ path: '**', redirectTo: '/home' },]
+    }]
     
 @NgModule({
         declarations: [
