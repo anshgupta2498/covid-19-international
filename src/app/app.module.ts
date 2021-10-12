@@ -27,7 +27,7 @@ import { FooterComponent } from './home/footer/footer.component';
 
 const appRoutes: Routes =
   [
-    { path: '**', redirectTo: '/home' },
+    
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
       path: 'home', component: HomeComponent, children: [
@@ -51,7 +51,8 @@ const appRoutes: Routes =
           ]
         }
       ]
-    }]
+    }
+    ,{ path: '**', redirectTo: '/home' },]
     
 @NgModule({
         declarations: [
