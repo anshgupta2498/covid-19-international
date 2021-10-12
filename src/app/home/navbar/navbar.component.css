@@ -24,13 +24,13 @@
 @media screen and (max-width:768px) {
    
     .cases{
-        padding: .4rem;
+        /* padding: .5rem; */
         font-size: .9rem;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:592px) {
     .cases{
-        padding: .2rem;
-        font-size: .7rem;
+        padding: .5rem;
+        font-size: .8rem;
     }
 }
