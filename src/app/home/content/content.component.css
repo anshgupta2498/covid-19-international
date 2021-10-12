@@ -4,6 +4,7 @@
 }
 .heading{
     color: rgb(71, 127, 199);
+    font-weight: bold;
 }
 table{
     width: 100%;
