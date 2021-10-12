@@ -27,7 +27,6 @@ tr:nth-child(odd){
     background-color: rgb(25, 35, 63);
 }
 tr:hover{
-    background-color: rgb(51, 51, 128);
     cursor: pointer;
 }
 

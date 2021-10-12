@@ -1,5 +1,5 @@
 .cases{
-    background-color: rgb(56, 60, 168);
+    background-color: #2f3694;
     margin: 0 .25rem;
     text-align: center;
     border-radius: .5rem .5rem 0px 0px;
@@ -8,7 +8,6 @@
 }
 .cases:hover, .vaccination:hover{
     cursor: pointer;
-    background-color: rgb(94, 117, 190);
 }
 
 .dash-flex{
@@ -19,7 +18,7 @@
     width: 22%;
 }
 .active{
-    background-color: rgb(113, 132, 216);
+    background-color: rgb(10, 27, 105);
 }
 @media screen and (max-width:768px) {
    

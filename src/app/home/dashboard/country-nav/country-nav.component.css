@@ -1,5 +1,5 @@
 .cases{
-    background-color:rgb(56, 60, 168);
+    background-color:#2f3694;
     width: 30%;
     margin: 0 5px;
     text-align: center;
@@ -9,11 +9,11 @@
 }
 .cases:hover{
     cursor: pointer;
-    background-color: rgb(77, 95, 156);
 }
 
 .active{
-    background-color: rgb(55, 86, 153);
+    background-color: rgb(5, 41, 117);
+    translate: scaleY(-.5rem) ;
 }
 .dash-flex{
     display: flex;
