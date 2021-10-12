@@ -16,6 +16,14 @@
 .flag{
     width: 2.5rem;
 }
+.err{
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    margin: 5rem 2rem;
+    width: 3rem;
+}
 @media screen and (max-width:768px) {
     .h4{
        font-size: .8rem;

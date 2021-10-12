@@ -14,10 +14,12 @@ import { CountryService } from 'src/app/country.service';
 export class CountriesComponent implements OnInit {
   constructor(private router:Router,public service:CountryService,private route:ActivatedRoute) { }
   filteredCountries: Country[] = [];
+  countryList:boolean = false;
   ngOnInit(): void {
   }
   getFilteredCountries(countries: Country[]) {
     this.filteredCountries = countries;
+    this.countryList = true;
   }
   countryClicked(event: any){
     this.service.receiveCountry(event.target.innerText);

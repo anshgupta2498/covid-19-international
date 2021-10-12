@@ -1,5 +1,8 @@
 <app-search-countries (event)="getFilteredCountries($event)"></app-search-countries>
-<div class="countries">
+<div *ngIf="!countryList" class="err"><img
+    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" class="loader"
+    alt="loader"></div>
+<div *ngIf="countryList" class="countries">
     <div class="country-list card" *ngFor="let country of filteredCountries ">
         <div [routerLink]="[country.country]" class="d-flex justify-content-between align-items-center card-body">
             <p class="h4">{{country.country}}</p>
