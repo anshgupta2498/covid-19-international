@@ -7,7 +7,7 @@
     background-color: #1f2c54;
 }
 .countries{
-    height: 100vh;
+    max-height: 100vh;
     overflow: auto;
 }
 .h4{
@@ -24,7 +24,7 @@
 }
 @media screen and (max-width:592px) {
     .countries{
-        height: 30vh;
+        max-height: 40vh;
         margin-bottom: 4rem;
     }
     .h4{
